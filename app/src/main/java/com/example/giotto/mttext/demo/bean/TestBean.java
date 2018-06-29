@@ -4,7 +4,7 @@ package com.example.giotto.mttext.demo.bean;
  * @author SHAOS.
  * @PackageName com.example.giotto.myapplication
  * @date 2016-09-09 11:48
- * @description
+ * @description TestBean
  */
 public class TestBean {
     private String checkResult;

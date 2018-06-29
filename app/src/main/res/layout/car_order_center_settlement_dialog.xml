@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/car_order_center_settlement_dialog_pop_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="250dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/car_order_center_settlement_dialog_title_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="13dp"
+            android:text="Title"
+            android:textColor="@color/black3"
+            android:textSize="16sp" />
+
+        <View style="@style/GrayLine" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/car_order_center_settlement_dialog_lv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none"
+                android:visibility="visible" />
+
+            <RelativeLayout
+                android:id="@+id/car_order_center_settlement_dialog_rl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/car_order_center_settlement_dialog_tips_tv"
+                    android:background="@mipmap/car_order_center_settlement_dialog_iv" />
+
+                <TextView
+                    android:id="@+id/car_order_center_settlement_dialog_tips_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:padding="18dp"
+                    android:text="当前订单车辆卖方已指定过户类型"
+                    android:textColor="@color/orange_ff6600" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <View style="@style/GrayLine" />
+
+        <TextView
+            android:id="@+id/car_order_center_settlement_dialog_finish_tv"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="13dp"
+            android:text="关闭"
+            android:textColor="@color/black3"
+            android:textSize="16sp" />
+    </LinearLayout>
+</RelativeLayout>

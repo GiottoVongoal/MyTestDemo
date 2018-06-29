@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/rl1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/rl_tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="我是1" />
+
+            <TextView
+                android:id="@+id/rl_tv1_bottom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_tv1"
+                android:layout_marginTop="10dp"
+                android:text="我在1下边" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@+id/rl_tv1"
+                android:gravity="right"
+                android:text="右边"
+                android:visibility="visible" />
+        </RelativeLayout>
+
+        <View style="@style/GrayLine_shu" />
+
+        <RelativeLayout
+            android:id="@+id/rl2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/rl_tv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="我是2" />
+
+            <TextView
+                android:id="@+id/rl_tv2_bottom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_tv2"
+                android:layout_marginTop="10dp"
+                android:text="我在2下边" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@+id/rl_tv2"
+                android:gravity="right"
+                android:text="右边"
+                android:visibility="visible" />
+        </RelativeLayout>
+
+        <View style="@style/GrayLine_shu" />
+
+        <RelativeLayout
+            android:id="@+id/rl3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/rl_tv3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="我是3" />
+
+            <TextView
+                android:id="@+id/rl_tv3_bottom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_tv3"
+                android:layout_marginTop="10dp"
+                android:text="我在3下边" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@+id/rl_tv3"
+                android:gravity="right"
+                android:text="右边"
+                android:visibility="visible" />
+        </RelativeLayout>
+
+        <View style="@style/GrayLine_shu" />
+
+        <RelativeLayout
+            android:id="@+id/rl4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/rl_tv4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="我是4" />
+
+            <TextView
+                android:id="@+id/rl_tv4_bottom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_tv4"
+                android:layout_marginTop="10dp"
+                android:text="我在4下边" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@+id/rl_tv4"
+                android:gravity="right"
+                android:text="右边"
+                android:visibility="visible" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View style="@style/GrayLine" />
+
+    <LinearLayout
+        android:id="@+id/huadong_fragment_ll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"></LinearLayout>
+</LinearLayout>

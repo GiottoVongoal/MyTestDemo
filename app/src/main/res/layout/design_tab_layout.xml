@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--app:tabSelectedTextColor改变选中字体的颜色-->
+    <!--app:tabTextColor改变未选中字体的颜色-->
+    <!--app:tabIndicatorColor改变指示器下标的颜色-->
+    <!--app:tabIndicatorHeight设置指示器下标的高度-->
+    <!--app:tabMode="scrollable"可滑动-->
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tabGravity="fill"
+        app:tabIndicatorColor="@android:color/holo_green_dark"
+        app:tabIndicatorHeight="4dp"
+        app:tabMode="scrollable"
+        app:tabPadding="10dp"
+        app:tabSelectedTextColor="@android:color/holo_orange_light"
+        app:tabTextColor="@color/colorPrimary" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/tab_viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#ffffff" />
+</LinearLayout>

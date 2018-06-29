@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cv_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:foreground="?android:attr/selectableItemBackground"
+    card_view:cardBackgroundColor="#ffffff"
+    card_view:cardCornerRadius="4dp"
+    card_view:cardElevation="10dp">
+    <!--cardElevation  设置Z轴阴影-->
+    <!--使用android:foreground可以使CardView点击产生波纹的效果，有触摸点向外扩散。-->
+    <!--cardBackgroundColor 改变CardView的背景-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_item_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="test" />
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

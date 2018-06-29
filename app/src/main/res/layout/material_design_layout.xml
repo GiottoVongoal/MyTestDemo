@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:id="@+id/frame_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/drawer_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="15dp">
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/textInputLayout_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:counterOverflowTextAppearance="@style/counterOverflowTextAppearance"
+                app:errorEnabled="true"
+                app:errorTextAppearance="@style/errorAppearance"
+                app:hintAnimationEnabled="true">
+                <!--app:errorEnabled="true"时，开启错误提示-->
+                <!--app:hintAnimationEnabled="true"设置是否可以使用动画-->
+
+                <EditText
+                    android:id="@+id/phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="电话"
+                    android:inputType="textEmailAddress"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textColorHint="@android:color/holo_blue_dark" />
+            </android.support.design.widget.TextInputLayout>
+
+            <!--TextInputLayout的颜色来自style中的colorAccent的颜色-->
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/textInputLayout_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:counterOverflowTextAppearance="@style/counterOverflowTextAppearance"
+                app:errorEnabled="true"
+                app:errorTextAppearance="@style/errorAppearance"
+                app:hintAnimationEnabled="true">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/green_aed79b"
+                    android:hint="姓名"
+                    android:inputType="text"
+                    android:textCursorDrawable="@drawable/cursor_shape" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/textInputLayout_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:counterOverflowTextAppearance="@style/counterOverflowTextAppearance"
+                app:errorEnabled="true"
+                app:errorTextAppearance="@style/errorAppearance"
+                app:hintAnimationEnabled="true"
+                app:passwordToggleEnabled="true"
+                app:passwordToggleTint="@color/visibility_selector">
+                <!--app:passwordToggleDrawable="@drawable/visibility_selector"-->
+
+                <EditText
+                    android:id="@+id/editText2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="密码"
+                    android:inputType="numberPassword" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/xuehao_text_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="学号">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/xuehao_text_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number" />
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:id="@+id/open_left_drawer_layout_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="20dp"
+                android:text="点我滑出左抽屉" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!--左侧导航菜单-->
+    <android.support.design.widget.NavigationView
+        android:id="@+id/navigation_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/navigation_header"
+        app:menu="@menu/drawer" />
+</android.support.v4.widget.DrawerLayout>

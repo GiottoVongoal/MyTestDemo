@@ -1,0 +1,68 @@
+<resources>
+    <string name="app_name">MtText</string>
+
+    <string name="pull_to_refresh_pull_label">下拉刷新</string>
+    <string name="pull_to_refresh_release_label">松开刷新</string>
+    <string name="pull_to_refresh_refreshing_label">正在刷新\u2026</string>
+    <string name="pull_to_refresh_footer_release_label">松开加载更多</string>
+    <string name="pull_to_refresh_footer_pull_label">上拉加载更多</string>
+    <string name="pull_to_refresh_footer_refreshing_label">加载中\u2026</string>
+
+    <string name="material_design_string">我们来分析一下这个布局文件：\n
+1.最外层的布局用的是CoordinatorLayout，因为这里面有很多的动画，CoordinatorLayout可以很好的去协调里面的动画。在android.support.design.widget.AppBarLayout下面的那个LinearLayout被标记了appbar_scrolling_view_behavior，这样一来AppBarLayout就能响应LinearLayout中的滚动事件。\n
+2.再来看看CollapsingToolbarLayout，其中contentScrim是设置其内容区的颜色，layout_scrollFlags取了scroll和exitUntilCollapsed两个值。
+layout_scrollFlags的Flag包括：\n
+
+scroll: 所有想滚动出屏幕的view都需要设置这个flag，没有设置这个flag的view将被固定在屏幕顶部。\n
+enterAlways: 这个flag让任意向下的滚动都会导致该view变为可见，当向上滑的时候Toolbar就隐藏，下滑的时候显示。\n
+enterAlwaysCollapsed: 顾名思义，这个flag定义的是何时进入（已经消失之后何时再次显示）。假设你定义了一个最小高度（minHeight）同时enterAlways也定义了，那么view将在到达这个最小高度的时候开始显示，并且从这个时候开始慢慢展开，当滚动到顶部的时候展开完。\n
+exitUntilCollapsed: 同样顾名思义，这个flag时定义何时退出，当你定义了一个minHeight，这个view将在滚动到达这个最小高度的时候消失。\n
+只看概览可能还是不会太清楚，注意一定要多实践，感兴趣的读者可以一个一个去试一试效果。\n
+
+3.定位到ImageView，有这两个属性是我们平常用没看到的，说明我写在注释上了\n
+4.Toolbar中有一个app:layout_collapseMode="pin" 这个确保Toolbar在AppBarLayout折叠的时候仍然被固定在屏幕的顶部.
+布局文件就到这，我们来看看Activity中的逻辑</string>
+    <string name="mvvm_string">mvvm</string>
+
+    <string-array name="calendar_week">
+        <item>日</item>
+        <item>一</item>
+        <item>二</item>
+        <item>三</item>
+        <item>四</item>
+        <item>五</item>
+        <item>六</item>
+    </string-array>
+
+    <string-array name="calendar_month">
+        <item>一月</item>
+        <item>二月</item>
+        <item>三月</item>
+        <item>四月</item>
+        <item>五月</item>
+        <item>六月</item>
+        <item>七月</item>
+        <item>八月</item>
+        <item>九月</item>
+        <item>十月</item>
+        <item>十一月</item>
+        <item>十二月</item>
+    </string-array>
+    <string name="calendar_day">%d 日</string>
+    <string name="calendar_year">%d-</string>
+
+    <string-array name="jazzy_effects">
+        <item>Standard</item>
+        <item>Tablet</item>
+        <item>CubeIn</item>
+        <item>CubeOut</item>
+        <item>FlipVertical</item>
+        <item>FlipHorizontal</item>
+        <item>Stack</item>
+        <item>ZoomIn</item>
+        <item>ZoomOut</item>
+        <item>RotateUp</item>
+        <item>RotateDown</item>
+        <item>Accordion</item>
+    </string-array>
+</resources>

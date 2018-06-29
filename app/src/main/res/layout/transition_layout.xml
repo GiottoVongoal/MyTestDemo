@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey4"
+    android:padding="20dp"
+    tools:context="com.example.giotto.mttext.demo.materialdesign.TransitionActivity">
+
+    <TextView
+        android:id="@+id/transition_view"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/item_bg"
+        android:gravity="center"
+        android:text="可点击"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintRight_toRightOf="@+id/view"
+        android:layout_marginTop="43dp"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/view"
+        app:layout_constraintTop_toTopOf="parent" />
+    <!--android:transitionName="square_blue"-->
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="66dp"
+        android:background="@mipmap/ic_launcher"
+        app:layout_constraintTop_toBottomOf="@+id/transition_view"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintRight_toRightOf="@+id/view2"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/view2" />
+
+    <TextView
+        android:id="@+id/view2"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="66dp"
+        android:background="@drawable/sharp_dialog_circle_white"
+        android:gravity="center"
+        android:text="可点击"
+        app:layout_constraintTop_toBottomOf="@+id/view"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintRight_toRightOf="@+id/view3"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/view3" />
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="89dp"
+        android:background="@drawable/shape_shopping_cart"
+        app:layout_constraintTop_toBottomOf="@+id/view2"
+        android:layout_marginStart="49dp"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <ImageView
+        android:id="@+id/transition_iv"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="42dp"
+        android:src="@mipmap/ic_launcher"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view3"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintLeft_creator="1" />
+</android.support.constraint.ConstraintLayout>

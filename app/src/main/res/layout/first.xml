@@ -1,0 +1,48 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/donghua_tv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="动画" />
+
+    <Button
+        android:id="@+id/show_recyclerview_tv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="RecyclerView" />
+
+    <Button
+        android:id="@+id/recyclerview_add_scrollview_tv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="RecyclerView与ScrollView滑动冲出" />
+
+    <Button
+        android:id="@+id/headerbottom_recyclerview_tv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="RecyclerView增加Header和Bottom"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/staggeredgrid_recyclerview_tv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="瀑布流" />
+
+    <Button
+        android:id="@+id/recyclerview_pull_tv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="RecyclerView下拉刷新上拉加载" />
+
+    <ViewStub
+        android:id="@+id/viewstub"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout="@layout/mytext" />
+</LinearLayout>

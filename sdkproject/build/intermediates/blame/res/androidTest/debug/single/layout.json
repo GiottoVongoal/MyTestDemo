@@ -1,0 +1,54 @@
+[
+    {
+        "merged": "D:\\android\\androidcode\\MtText\\sdkproject\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\cloudwalk_layout_facedect_step.xml",
+        "source": "D:\\android\\androidcode\\MtText\\sdkproject\\build\\intermediates\\bundles\\debug\\res\\layout\\cloudwalk_layout_facedect_step.xml"
+    },
+    {
+        "merged": "D:\\android\\androidcode\\MtText\\sdkproject\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\cloudwalk_activity_facedect.xml",
+        "source": "D:\\android\\androidcode\\MtText\\sdkproject\\build\\intermediates\\bundles\\debug\\res\\layout\\cloudwalk_activity_facedect.xml"
+    },
+    {
+        "merged": "D:\\android\\androidcode\\MtText\\sdkproject\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\cloudwalk_activity_bankocr.xml",
+        "source": "D:\\android\\androidcode\\MtText\\sdkproject\\build\\intermediates\\bundles\\debug\\res\\layout\\cloudwalk_activity_bankocr.xml"
+    },
+    {
+        "merged": "D:\\android\\androidcode\\MtText\\sdkproject\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\cloudwalk_activity_rect_ocr.xml",
+        "source": "D:\\android\\androidcode\\MtText\\sdkproject\\build\\intermediates\\bundles\\debug\\res\\layout\\cloudwalk_activity_rect_ocr.xml"
+    },
+    {
+        "merged": "D:\\android\\androidcode\\MtText\\sdkproject\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\cloudwalk_activity_live_server.xml",
+        "source": "D:\\android\\androidcode\\MtText\\sdkproject\\build\\intermediates\\bundles\\debug\\res\\layout\\cloudwalk_activity_live_server.xml"
+    },
+    {
+        "merged": "D:\\android\\androidcode\\MtText\\sdkproject\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\cloudwalk_layout_facedect_step_start.xml",
+        "source": "D:\\android\\androidcode\\MtText\\sdkproject\\build\\intermediates\\bundles\\debug\\res\\layout\\cloudwalk_layout_facedect_step_start.xml"
+    },
+    {
+        "merged": "D:\\android\\androidcode\\MtText\\sdkproject\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\cloudwalk_layout_facedect_start.xml",
+        "source": "D:\\android\\androidcode\\MtText\\sdkproject\\build\\intermediates\\bundles\\debug\\res\\layout\\cloudwalk_layout_facedect_start.xml"
+    },
+    {
+        "merged": "D:\\android\\androidcode\\MtText\\sdkproject\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\cloudwalk_activity_bestface.xml",
+        "source": "D:\\android\\androidcode\\MtText\\sdkproject\\build\\intermediates\\bundles\\debug\\res\\layout\\cloudwalk_activity_bestface.xml"
+    },
+    {
+        "merged": "D:\\android\\androidcode\\MtText\\sdkproject\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\cloudwalk_progresshud_hud.xml",
+        "source": "D:\\android\\androidcode\\MtText\\sdkproject\\build\\intermediates\\bundles\\debug\\res\\layout\\cloudwalk_progresshud_hud.xml"
+    },
+    {
+        "merged": "D:\\android\\androidcode\\MtText\\sdkproject\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\cloudwalk_activity_ocrresult.xml",
+        "source": "D:\\android\\androidcode\\MtText\\sdkproject\\build\\intermediates\\bundles\\debug\\res\\layout\\cloudwalk_activity_ocrresult.xml"
+    },
+    {
+        "merged": "D:\\android\\androidcode\\MtText\\sdkproject\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\cloudwalk_activity_facedect_result.xml",
+        "source": "D:\\android\\androidcode\\MtText\\sdkproject\\build\\intermediates\\bundles\\debug\\res\\layout\\cloudwalk_activity_facedect_result.xml"
+    },
+    {
+        "merged": "D:\\android\\androidcode\\MtText\\sdkproject\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\cloudwalk_activity_bank_card_result.xml",
+        "source": "D:\\android\\androidcode\\MtText\\sdkproject\\build\\intermediates\\bundles\\debug\\res\\layout\\cloudwalk_activity_bank_card_result.xml"
+    },
+    {
+        "merged": "D:\\android\\androidcode\\MtText\\sdkproject\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\cloudwalk_actionbar_layout.xml",
+        "source": "D:\\android\\androidcode\\MtText\\sdkproject\\build\\intermediates\\bundles\\debug\\res\\layout\\cloudwalk_actionbar_layout.xml"
+    }
+]

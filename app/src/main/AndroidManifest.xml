@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.giotto.mttext.demo">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 加入在SDCard中创建与删除文件的权限 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <!-- 加入在SDCard中写入数据的权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!-- 普通类 -->
+        <activity android:name=".activitys.TextShowActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".donghua.FirstActivity" />
+        <!-- 动画类 -->
+        <activity android:name=".donghua.objectanimator.OldOMActivity" />
+        <activity android:name=".donghua.objectanimator.ObjectAnimatorActivity" />
+        <activity android:name=".donghua.objectanimator.PropertyTest" />
+        <!-- RecyclerView -->
+        <activity android:name=".donghua.recycler.MyRecylerActivity" />
+        <activity android:name=".donghua.recycler.headerbottom.HeaderBottomActivity" />
+        <activity android:name=".donghua.recycler.staggered.StaggeredGridLayoutActivity" />
+        <activity android:name=".donghua.recycler.pull.PullRecyclerViewActivity" />
+        <activity android:name=".donghua.recycler.addscrollview.MyRecycleScrollActivity" />
+        <!-- Activity管理器 -->
+        <activity android:name=".collectoractivitytext.OneActivity" />
+        <activity android:name=".collectoractivitytext.TwoActivity" />
+        <activity android:name=".collectoractivitytext.ThreeActivity" />
+        <activity android:name=".collectoractivitytext.FourActivity" />
+        <!-- 测试 -->
+        <activity android:name=".activitys.ScrollActivity" />
+        <!-- Glide加载图片 -->
+        <activity android:name=".glidetest.GlideImageViewActivity" />
+        <activity android:name=".glidetest.ListViewGlideActivity" />
+        <!-- Fragment显示Demo -->
+        <activity android:name=".fragmentdemo.FragmentDemoActivity" />
+        <!-- 仿支付宝四个活动,下拉导航变大的动画 -->
+        <activity android:name=".huadongdemo.HuadongActicity" />
+        <!-- 平滑过渡的ViewPager广告条 -->
+        <activity android:name=".adslip.ViewpagerSlipActivity" />
+        <!-- 测试获取验证码方法类 -->
+        <activity android:name=".timecount.GetVerificationCodeActivity" />
+        <!-- 图片点击一下就放大到全屏,再点一下就回到原界面 -->
+        <activity android:name=".picturefullscreen.PictureFullScreenActivity" />
+        <!-- 点菜页面 -->
+        <activity android:name=".foodmenu.FoodMenuActivity" />
+        <activity android:name=".foodmenu.FoodResultActivity" />
+        <activity android:name=".foodmenu.FoodInfoActivity" />
+        <!-- Lottie测试类 -->
+        <activity android:name=".lottie.LottieTestActivity" />
+        <!-- ConstraintLayout -->
+        <activity android:name=".constraintlayout.ConstraintLayoutActivity" />
+        <!-- MaterialDesign视觉设计相关类 -->
+        <activity
+            android:name=".materialdesign.MaterialDesignActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".materialdesign.MaterialDesignTwoActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".materialdesign.MaterialDesignBasicActivity" />
+        <activity
+            android:name=".materialdesign.TransitionActivity"
+            android:theme="@style/MaterialAnimations" />
+        <activity
+            android:name=".materialdesign.TransitionTwo_Activity"
+            android:theme="@style/MaterialAnimations" />
+        <activity android:name=".materialdesign.TransitionListActivity" />
+        <activity
+            android:name=".materialdesign.MaterialDesignBasicTwoActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".materialdesign.DesignTabLayoutActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".materialdesign.TransitionCircleActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".materialdesign.BottomNavigationViewActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <!--仿美团listview顶部多条件筛选-->
+        <activity android:name=".dropdownmenu.DropDownActivity" />
+        <!--展示历史查询-->
+        <activity android:name=".search.SearchActivity" />
+        <!--日历控件-->
+        <activity android:name=".dateview.MyDateActivity" />
+        <!--ViewPager特效滑动页面-->
+        <activity android:name=".adslip.GuideAct" />
+        <!--点我去检查控件是否划出屏幕页面-->
+        <activity android:name=".activitys.CheckViewIsShowActivity" />
+        <!--输入6位验证码页面-->
+        <activity android:name=".timecount.VerificationCodeActivity" />
+        <!--画折线图页面-->
+        <activity android:name=".linechart.DrawLineChartActivity" />
+        <!--ScrollView向上滑动标题栏渐变效果页面-->
+        <activity android:name=".Scrollviewtop.HuaDongActivity" />
+
+        <activity android:name=".mycustomviewltest.MyDemoSonActivity" />
+        <activity
+            android:name=".smarttab.SmartTabTestActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <!--封装一个通用的PopupWindow-->
+        <activity android:name=".commonpopwindow.PopupWindowActivity" />
+
+
+    </application>
+
+</manifest>

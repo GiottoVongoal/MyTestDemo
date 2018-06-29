@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:line="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.example.giotto.mttext.demo.linechart.SuitLines
+        android:id="@+id/suitlines"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        line:colorEdgeEffect="@color/colorPrimaryDark"
+        line:colorHint="@color/colorPrimary"
+        line:countOfY="6"
+        line:lineType="curve"
+        line:maxOfVisible="10"
+        line:needClickHint="true"
+        line:needEdgeEffect="true"
+        line:xyColor="@color/colorAccent"
+        line:xySize="8" />
+
+    <com.example.giotto.mttext.demo.linechart.SuitLines
+        android:id="@+id/suitlines2"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="10dp"
+        line:colorEdgeEffect="@color/colorPrimaryDark"
+        line:colorHint="@color/colorPrimary"
+        line:countOfY="6"
+        line:lineType="curve"
+        line:maxOfVisible="10"
+        line:needClickHint="true"
+        line:needEdgeEffect="true"
+        line:xyColor="@color/colorAccent"
+        line:xySize="8" />
+</LinearLayout>

@@ -1,0 +1,135 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!--自定义Material主题-->
+    <style name="MaterialAnimations" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <item name="android:colorPrimary">@color/material_animations_primary</item>
+        <item name="android:colorPrimaryDark">@color/material_animations_primary_dark</item>
+        <item name="android:colorAccent">@color/material_animations_accent</item>
+        <item name="android:textColorPrimary">@android:color/black</item>
+        <item name="android:textColorPrimaryInverse">@color/text_light</item>
+        <item name="android:statusBarColor">@color/material_animations_primary_dark</item>
+        <item name="android:textColor">@color/text_dark</item>
+        <item name="android:windowContentTransitions">true</item>
+        <item name="android:windowAllowEnterTransitionOverlap">false</item>
+        <item name="android:windowAllowReturnTransitionOverlap">false</item>
+        <item name="android:titleTextAppearance">@style/MaterialAnimations.TextAppearance.Title
+        </item>
+        <item name="android:windowBackground">@color/light_grey</item>
+    </style>
+
+    <style name="MaterialAnimations.TextAppearance.Title" parent="android:TextAppearance.Material.Title">
+        <item name="android:textColor">?android:textColorPrimary</item>
+    </style>
+    <!--自定义Material主题-->
+
+    <!--自定义主题-->
+    <style name="myStyle" parent="@android:style/android:Theme.Material">
+        <!--actionbar的背景色(绿)-->
+        <item name="android:colorPrimary">#0f0</item>
+        <!--状态栏的背景色(蓝)-->
+        <item name="android:colorPrimaryDark">#00f</item>
+        <!--控件颜色(红)-->
+        <item name="android:colorAccent">#f00</item>
+    </style>
+
+    <style name="dialog">
+        <item name="android:windowFrame">@null</item>
+        <!-- 边框 dialog的默认边框很大很多为false就可以完全自定义对话框位置大小颜色了 -->
+        <item name="android:windowIsFloating">false</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsTranslucent">false</item>
+        <!-- 半透明 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 无标题 -->
+        <item name="android:windowBackground">@color/transparent</item>
+        <!-- 背景透明 -->
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <!-- 灰色的线 -->
+    <style name="GrayLine">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.5dp</item>
+        <item name="android:background">@color/grey7</item>
+    </style>
+    <!-- 灰色的竖线 -->
+    <style name="GrayLine_shu">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">1dp</item>
+        <item name="android:background">@color/grey7</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <!--TextInputLayout输入框的错误提示样式-->
+    <style name="errorAppearance" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/red</item>
+    </style>
+
+    <style name="counterOverflowTextAppearance" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/red_a20025</item>
+    </style>
+    <!--查询已注册列表的小项PopupWindow-->
+    <style name="PopupRightAnimation" mce_bogus="1" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/popwindow_right_in</item>
+        <item name="android:windowExitAnimation">@anim/popwindow_right_out</item>
+    </style>
+
+    <style name="PopupleftAnimation" mce_bogus="1" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/popwindow_left_in</item>
+        <item name="android:windowExitAnimation">@anim/popwindow_left_out</item>
+    </style>
+    <!--6位数验证码-->
+    <style name="text_editStyle">
+        <item name="android:layout_height">43dp</item>
+        <item name="android:layout_width">43dp</item>
+        <item name="android:background">@mipmap/bg_verify</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/blue_0090FF</item>
+        <item name="android:textSize">15sp</item>
+
+    </style>
+    <!--日历相关-->
+    <declare-styleable name="WeekBarView">
+        <attr name="week_text_color" format="color" />
+        <attr name="week_text_size" format="integer" />
+    </declare-styleable>
+
+    <!--CommonPopupWindow-->
+    <style name="AnimDown" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/push_scale_in</item>
+        <item name="android:windowExitAnimation">@anim/push_scale_out</item>
+    </style>
+
+    <style name="AnimHorizontal" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/push_scale_left_in</item>
+        <item name="android:windowExitAnimation">@anim/push_scale_left_out</item>
+    </style>
+
+    <style name="AnimRight" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/push_scale_right_in</item>
+        <item name="android:windowExitAnimation">@anim/push_scale_right_out</item>
+    </style>
+
+    <style name="AnimUp" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/push_bottom_in</item>
+        <item name="android:windowExitAnimation">@anim/push_bottom_out</item>
+    </style>
+</resources>

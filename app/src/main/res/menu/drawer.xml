@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+    <group android:checkableBehavior="single">
+        <!-- single:组中的所有菜单项只能单选-->
+        <item
+            android:id="@+id/navigation_item_home"
+            android:checkable="true"
+            android:icon="@mipmap/a"
+            android:title="首页" />
+        <item
+            android:id="@+id/navigation_item_blog"
+            android:checkable="true"
+            android:icon="@mipmap/b"
+            android:title="我的博客" />
+        <item
+            android:id="@+id/navigation_item_about"
+            android:checkable="true"
+            android:icon="@mipmap/c"
+            android:title="关于" />
+    </group>
+
+    <item android:title="Sub1">
+        <menu>
+            <item
+                android:id="@+id/navigation_item_sub_1"
+                android:checkable="true"
+                android:icon="@drawable/ic_launcher"
+                android:title="Sub item 1" />
+            <item
+                android:id="@+id/navigation_item_sub_2"
+                android:checkable="true"
+                android:icon="@drawable/ic_launcher"
+                android:title="Sub item 2" />
+        </menu>
+    </item>
+
+    <item android:title="Sub2">
+        <menu>
+            <item
+                android:id="@+id/navigation_item_sub_3"
+                android:checkable="true"
+                android:icon="@drawable/ic_launcher"
+                android:title="Sub item 1" />
+            <item
+                android:id="@+id/navigation_item_sub_4"
+                android:checkable="true"
+                android:icon="@drawable/ic_launcher"
+                android:title="Sub item 2" />
+        </menu>
+    </item>
+
+    <item android:title="Sub3">
+        <menu>
+            <item
+                android:id="@+id/navigation_item_sub_5"
+                android:checkable="true"
+                android:icon="@drawable/ic_launcher"
+                android:title="Sub item 1" />
+            <item
+                android:id="@+id/navigation_item_sub_6"
+                android:checkable="true"
+                android:icon="@drawable/ic_launcher"
+                android:title="Sub item 2" />
+        </menu>
+    </item>
+</menu>

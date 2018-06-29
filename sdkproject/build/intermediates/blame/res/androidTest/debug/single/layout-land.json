@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "D:\\android\\androidcode\\MtText\\sdkproject\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout-land\\cloudwalk_activity_facedect.xml",
+        "source": "D:\\android\\androidcode\\MtText\\sdkproject\\build\\intermediates\\bundles\\debug\\res\\layout-land\\cloudwalk_activity_facedect.xml"
+    },
+    {
+        "merged": "D:\\android\\androidcode\\MtText\\sdkproject\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout-land\\cloudwalk_activity_bestface.xml",
+        "source": "D:\\android\\androidcode\\MtText\\sdkproject\\build\\intermediates\\bundles\\debug\\res\\layout-land\\cloudwalk_activity_bestface.xml"
+    },
+    {
+        "merged": "D:\\android\\androidcode\\MtText\\sdkproject\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout-land\\cloudwalk_activity_facedect_result.xml",
+        "source": "D:\\android\\androidcode\\MtText\\sdkproject\\build\\intermediates\\bundles\\debug\\res\\layout-land\\cloudwalk_activity_facedect_result.xml"
+    }
+]

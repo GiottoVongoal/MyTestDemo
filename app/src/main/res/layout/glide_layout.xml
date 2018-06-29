@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageview1"
+            android:layout_width="200dp"
+            android:layout_height="160dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="10dp"
+            android:scaleType="fitXY" />
+
+        <ImageView
+            android:id="@+id/imageview2"
+            android:layout_width="200dp"
+            android:layout_height="160dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="10dp"
+            android:scaleType="fitXY" />
+
+        <ImageView
+            android:id="@+id/imageview3"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="10dp"
+            android:scaleType="fitXY" />
+
+        <ImageView
+            android:id="@+id/imageview4"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="10dp"
+            android:scaleType="fitXY" />
+
+        <ImageView
+            android:id="@+id/imageview5"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="10dp"
+            android:scaleType="fitXY" />
+
+        <Button
+            android:id="@+id/textview1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:text="进度条加载" />
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal">
+
+            <ImageView
+                android:id="@+id/imageview6"
+                android:layout_width="200dp"
+                android:layout_height="160dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="10dp"
+                android:scaleType="fitXY" />
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_gravity="center"
+                android:indeterminate="false"
+                android:visibility="gone" />
+        </FrameLayout>
+    </LinearLayout>
+</ScrollView>

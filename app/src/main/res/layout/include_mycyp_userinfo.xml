@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/cyp_user_lt"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:background="@mipmap/tp04"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <FrameLayout
+                android:id="@+id/cyp_user_fl_img"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp">
+
+                <ImageView
+                    android:id="@+id/cyp_user_image"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@mipmap/ic_launcher" />
+
+            </FrameLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/cyp_user_fl_img"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@+id/cyp_user_fl_img">
+
+                <TextView
+                    android:id="@+id/cyp_user_userid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/cyp_user_userphone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/cyp_user_userid"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+
+            </RelativeLayout>
+
+            <FrameLayout
+                android:id="@+id/fl_message_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignWithParentIfMissing="true"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="15dp">
+
+                <ImageView
+                    android:id="@+id/iv_message"
+                    android:layout_width="28dip"
+                    android:layout_height="28dip"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="5dp"
+                    android:contentDescription="@string/app_name"
+                    android:gravity="center"
+                    android:src="@mipmap/a" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="24dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="13dp"
+                android:gravity="center"
+                android:paddingLeft="13dp"
+                android:paddingRight="21dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="账户管理"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

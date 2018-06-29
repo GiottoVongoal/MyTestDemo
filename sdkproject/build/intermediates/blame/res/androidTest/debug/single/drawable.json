@@ -1,0 +1,34 @@
+[
+    {
+        "merged": "D:\\android\\androidcode\\MtText\\sdkproject\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\cloudwalk_right_anim.xml",
+        "source": "D:\\android\\androidcode\\MtText\\sdkproject\\build\\intermediates\\bundles\\debug\\res\\drawable\\cloudwalk_right_anim.xml"
+    },
+    {
+        "merged": "D:\\android\\androidcode\\MtText\\sdkproject\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\cloudwalk_mouth_anim.xml",
+        "source": "D:\\android\\androidcode\\MtText\\sdkproject\\build\\intermediates\\bundles\\debug\\res\\drawable\\cloudwalk_mouth_anim.xml"
+    },
+    {
+        "merged": "D:\\android\\androidcode\\MtText\\sdkproject\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\cloudwalk_eye_anim.xml",
+        "source": "D:\\android\\androidcode\\MtText\\sdkproject\\build\\intermediates\\bundles\\debug\\res\\drawable\\cloudwalk_eye_anim.xml"
+    },
+    {
+        "merged": "D:\\android\\androidcode\\MtText\\sdkproject\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\cloudwalk_up_anim.xml",
+        "source": "D:\\android\\androidcode\\MtText\\sdkproject\\build\\intermediates\\bundles\\debug\\res\\drawable\\cloudwalk_up_anim.xml"
+    },
+    {
+        "merged": "D:\\android\\androidcode\\MtText\\sdkproject\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\cloudwalk_red_btn_selector.xml",
+        "source": "D:\\android\\androidcode\\MtText\\sdkproject\\build\\intermediates\\bundles\\debug\\res\\drawable\\cloudwalk_red_btn_selector.xml"
+    },
+    {
+        "merged": "D:\\android\\androidcode\\MtText\\sdkproject\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\cloudwalk_down_anim.xml",
+        "source": "D:\\android\\androidcode\\MtText\\sdkproject\\build\\intermediates\\bundles\\debug\\res\\drawable\\cloudwalk_down_anim.xml"
+    },
+    {
+        "merged": "D:\\android\\androidcode\\MtText\\sdkproject\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\cloudwalk_actionbar_btn_selector.xml",
+        "source": "D:\\android\\androidcode\\MtText\\sdkproject\\build\\intermediates\\bundles\\debug\\res\\drawable\\cloudwalk_actionbar_btn_selector.xml"
+    },
+    {
+        "merged": "D:\\android\\androidcode\\MtText\\sdkproject\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\cloudwalk_left_anim.xml",
+        "source": "D:\\android\\androidcode\\MtText\\sdkproject\\build\\intermediates\\bundles\\debug\\res\\drawable\\cloudwalk_left_anim.xml"
+    }
+]

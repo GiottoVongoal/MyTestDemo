@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="transparent">#00000000</color>
+    <color name="blue3">#4a90e2</color>
+    <color name="blue4">#FF8AB8ED</color>
+    <color name="green_aed79b">#AED79B</color>
+    <color name="color_item_press">#ffff0000</color>
+    <color name="color_item_normal">#44ff0000</color>
+    <color name="grey3">#313131</color>
+    <color name="grey4">#dcdcdc</color>
+    <color name="grey5">#f4f4f5</color>
+    <color name="grey6">#f3f3f3</color>
+    <color name="grey7">#dddddd</color>
+    <color name="grey8">#eeeeee</color>
+    <color name="grey9">#c9c9c9</color>
+    <color name="grey_DDDDDD">#DDDDDD</color>
+    <color name="white">#ffffff</color>
+    <color name="unchose_card_type_yyb">#d8d8d8</color>
+    <color name="gray_55b8b8b8">#55b8b8b8</color>
+    <color name="black3">#333333</color>
+    <color name="orange_ff6600">#dddddd</color>
+    <color name="orange1">#dc5914</color>
+    <color name="red">#ff0000</color>
+    <color name="red2">#eb6100</color>
+    <color name="red_a20025">#a20025</color>
+    <color name="window_background">#fff5f5f5</color>
+    <color name="popup_main_background">#b0000000</color>
+    <color name="transparent_gray">#55000000</color>
+    <color name="transparent_gray2">#55000000</color>
+    <color name="transparent_gray3">#a0000000</color>
+    <color name="transparent_white1">#ffffffff</color>
+    <color name="translucent_background">#fbffffff</color>
+    <!-- 蓟色 -->
+    <color name="lightgray">#D3D3D3</color>
+
+    <color name="material_animations_primary">#039BE5</color>
+    <color name="material_animations_primary_dark">#0277BD</color>
+    <color name="material_animations_blank">#424242</color>
+    <color name="material_animations_accent">#3F51B5</color>
+
+    <color name="text_light">@android:color/white</color>
+    <color name="text_dark">#616161</color>
+    <color name="light_grey">#E0E0E0</color>
+
+    <color name="gray">#cccccc</color>
+    <!---->
+    <color name="drop_down_selected">#7B1FA2</color>
+    <color name="drop_down_unselected">#111111</color>
+    <color name="mask_color">#88888888</color>
+    <color name="check_bg">#f2f2f2</color>
+    <color name="un_press_color">#9C27B0</color>
+
+    <color name="color_select_date_dialog_edit_text_bg_focus">#A68BFF</color>
+    <color name="color_small_calendar_text">#7452E4</color>
+    <color name="holiday_text_color">#9082BD</color>
+    <color name="select_circle_color">#FF8594</color>
+
+    <color name="blue_0090FF">#0090FF</color>
+
+    <color name="black_50">#80000000</color>
+    <color name="def_tab_text_color">@color/black_50</color>
+    <color name="def_tab_text_selector_color">#333333</color>
+
+    <color name="black_deep">#FF000000</color>
+    <color name="bbbbbb_2.3">#bbbbbb</color>
+    <item name="gray_holo_light" type="color">#ffd0d0d0</item>
+    <color name="green_deep_color">#6fb30d</color>
+</resources>

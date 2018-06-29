@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <ScrollView
+        android:id="@+id/caidan_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/pop_tradinghall_egg_iv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@mipmap/tanc_00000" />
+
+                <TextView
+                    android:id="@+id/pop_tradinghall_egg_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_below="@+id/pop_tradinghall_egg_iv"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center_horizontal"
+                    android:text="aaaaa"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/pop_tradinghall_egg_close"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_below="@+id/pop_tradinghall_egg_tv"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center_horizontal"
+                    android:text="关闭"
+                    android:textSize="20sp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

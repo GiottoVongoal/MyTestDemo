@@ -2,9 +2,13 @@ package com.example.giotto.mttext.demo.activitys;
 
 import android.app.Activity;
 import android.app.ActivityOptions;
+import android.app.Notification;
+import android.app.NotificationManager;
+import android.app.PendingIntent;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v4.app.NotificationCompat;
 import android.text.Spannable;
 import android.text.SpannableStringBuilder;
 import android.text.style.ForegroundColorSpan;
@@ -77,6 +81,9 @@ public class TextShowActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.textshow_layout);
         MyUtils.verifyStoragePermissions(this);
+
+        getChannelNotification("title", "我是message");
+
         tv = (TextView) findViewById(R.id.tv);
         tv.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -659,6 +666,23 @@ public class TextShowActivity extends Activity {
             return true;
         }
         return super.dispatchKeyEvent(event);
+    }
+
+    //通知
+    private void getChannelNotification(String title, String message) {
+        NotificationCompat.Builder builder = new NotificationCompat.Builder(this);
+        Intent intent = new Intent(this, ScrollActivity.class);
+        PendingIntent pendingIntent = PendingIntent.getActivity(this, 0, intent, PendingIntent.FLAG_UPDATE_CURRENT);
+        Notification notification = builder.setSmallIcon(R.mipmap.ic_launcher)//设置小图标
+                .setContentTitle(title)
+                .setContentText(message)
+                .setVisibility(Notification.VISIBILITY_PUBLIC)
+                .setPriority(NotificationCompat.PRIORITY_HIGH)//优先级高
+                .setAutoCancel(true)//点击后消失
+                .setContentIntent(pendingIntent)//设置意图
+                .build();//创建通知对象完成
+        NotificationManager manager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
+        manager.notify(1, notification);//显示通知
     }
 
 }

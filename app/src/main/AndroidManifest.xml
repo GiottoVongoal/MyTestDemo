@@ -108,6 +108,8 @@
         <activity android:name=".linechart.DrawLineChartActivity" />
         <!--ScrollView向上滑动标题栏渐变效果页面-->
         <activity android:name=".Scrollviewtop.HuaDongActivity" />
+        <!--带粘性的ScrollView,上滑下滑都显示粘性效果-->
+        <activity android:name=".springview.SpringViewActivity" />
 
         <activity android:name=".mycustomviewltest.MyDemoSonActivity" />
         <activity

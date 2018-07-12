@@ -51,6 +51,9 @@ import com.example.giotto.mttext.demo.mycustomviewltest.MyDemoSonActivity;
 import com.example.giotto.mttext.demo.picturefullscreen.PictureFullScreenActivity;
 import com.example.giotto.mttext.demo.search.SearchActivity;
 import com.example.giotto.mttext.demo.smarttab.SmartTabTestActivity;
+import com.example.giotto.mttext.demo.springview.AcFunHeader;
+import com.example.giotto.mttext.demo.springview.SpringView;
+import com.example.giotto.mttext.demo.springview.SpringViewActivity;
 import com.example.giotto.mttext.demo.timecount.GetVerificationCodeActivity;
 import com.example.giotto.mttext.demo.timecount.VerificationCodeActivity;
 import com.example.giotto.mttext.demo.utils.MyUtils;
@@ -69,6 +72,7 @@ import java.util.TimerTask;
 
 public class TextShowActivity extends Activity {
     private TextView tv;
+    private SpringView spring_view;
 
     /**************************************/
     private CarOrderTrackingPopupWindow menuWindow;
@@ -81,6 +85,11 @@ public class TextShowActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.textshow_layout);
         MyUtils.verifyStoragePermissions(this);
+
+        spring_view = (SpringView) findViewById(R.id.spring_view);
+        spring_view.setGive(SpringView.Give.NONE);
+        spring_view.setHeader(new AcFunHeader(this, 0));
+        spring_view.setFooter(new AcFunHeader(this, 0));
 
         getChannelNotification("title", "我是message");
 
@@ -515,11 +524,11 @@ public class TextShowActivity extends Activity {
         tv33.setPadding(10, 10, 10, 10);
         LinearLayout.LayoutParams lp33 = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT);
         layout.addView(tv33, lp33);
-        tv33.setText("测试页面");
+        tv33.setText("点我去vivi中带粘性的ScrollView,上滑下滑都显示粘性效果");
         tv33.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-//                MyUtils.intentStartActivity(TextShowActivity.this, AAAAAAAAAA.class);
+                MyUtils.intentStartActivity(TextShowActivity.this, SpringViewActivity.class);
             }
         });
 

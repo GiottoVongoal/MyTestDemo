@@ -92,33 +92,32 @@
         <activity
             android:name=".materialdesign.BottomNavigationViewActivity"
             android:theme="@style/AppTheme.NoActionBar" />
-        <!--仿美团listview顶部多条件筛选-->
+        <!-- 仿美团listview顶部多条件筛选 -->
         <activity android:name=".dropdownmenu.DropDownActivity" />
-        <!--展示历史查询-->
+        <!-- 展示历史查询 -->
         <activity android:name=".search.SearchActivity" />
-        <!--日历控件-->
+        <!-- 日历控件 -->
         <activity android:name=".dateview.MyDateActivity" />
-        <!--ViewPager特效滑动页面-->
+        <!-- ViewPager特效滑动页面 -->
         <activity android:name=".adslip.GuideAct" />
-        <!--点我去检查控件是否划出屏幕页面-->
+        <!-- 点我去检查控件是否划出屏幕页面 -->
         <activity android:name=".activitys.CheckViewIsShowActivity" />
-        <!--输入6位验证码页面-->
+        <!-- 输入6位验证码页面 -->
         <activity android:name=".timecount.VerificationCodeActivity" />
-        <!--画折线图页面-->
+        <!-- 画折线图页面 -->
         <activity android:name=".linechart.DrawLineChartActivity" />
-        <!--ScrollView向上滑动标题栏渐变效果页面-->
+        <!-- ScrollView向上滑动标题栏渐变效果页面 -->
         <activity android:name=".Scrollviewtop.HuaDongActivity" />
-        <!--带粘性的ScrollView,上滑下滑都显示粘性效果-->
+        <!-- 带粘性的ScrollView,上滑下滑都显示粘性效果 -->
         <activity android:name=".springview.SpringViewActivity" />
-
         <activity android:name=".mycustomviewltest.MyDemoSonActivity" />
         <activity
             android:name=".smarttab.SmartTabTestActivity"
             android:theme="@style/AppTheme.NoActionBar" />
-        <!--封装一个通用的PopupWindow-->
+        <!-- 封装一个通用的PopupWindow -->
         <activity android:name=".commonpopwindow.PopupWindowActivity" />
-
-
+        <!--通过手势随意缩放、移动ImageView图片-->
+        <activity android:name=".scaleimageview.ScaleImageViewActivity"/>
     </application>
 
 </manifest>

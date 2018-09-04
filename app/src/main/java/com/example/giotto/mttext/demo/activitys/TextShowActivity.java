@@ -49,6 +49,7 @@ import com.example.giotto.mttext.demo.materialdesign.TransitionActivity;
 import com.example.giotto.mttext.demo.materialdesign.TransitionListActivity;
 import com.example.giotto.mttext.demo.mycustomviewltest.MyDemoSonActivity;
 import com.example.giotto.mttext.demo.picturefullscreen.PictureFullScreenActivity;
+import com.example.giotto.mttext.demo.scaleimageview.ScaleImageViewActivity;
 import com.example.giotto.mttext.demo.search.SearchActivity;
 import com.example.giotto.mttext.demo.smarttab.SmartTabTestActivity;
 import com.example.giotto.mttext.demo.springview.AcFunHeader;
@@ -529,6 +530,17 @@ public class TextShowActivity extends Activity {
             @Override
             public void onClick(View view) {
                 MyUtils.intentStartActivity(TextShowActivity.this, SpringViewActivity.class);
+            }
+        });
+        TextView tv34 = new TextView(this);
+        tv34.setPadding(10, 10, 10, 10);
+        LinearLayout.LayoutParams lp34 = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT);
+        layout.addView(tv34, lp34);
+        tv34.setText("点我去通过手势随意缩放、移动ImageView图片页面");
+        tv34.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                MyUtils.intentStartActivity(TextShowActivity.this, ScaleImageViewActivity.class);
             }
         });
 

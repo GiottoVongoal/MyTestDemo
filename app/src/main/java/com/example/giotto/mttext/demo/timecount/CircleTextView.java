@@ -15,6 +15,7 @@ import com.example.giotto.mttext.demo.R;
 public class CircleTextView extends TextView {
 
     private Paint mBgPaint = new Paint();
+    private int color;
 
     PaintFlagsDrawFilter pfd = new PaintFlagsDrawFilter(0, Paint.ANTI_ALIAS_FLAG | Paint.FILTER_BITMAP_FLAG);
 
@@ -26,12 +27,14 @@ public class CircleTextView extends TextView {
         super(context, attrs);
         mBgPaint.setColor(Color.WHITE);
         mBgPaint.setAntiAlias(true);
+        color = getResources().getColor(R.color.black3);
     }
 
     public CircleTextView(Context context) {
         super(context);
         mBgPaint.setColor(Color.WHITE);
         mBgPaint.setAntiAlias(true);
+        color = getResources().getColor(R.color.black3);
     }
 
     @Override
@@ -48,12 +51,16 @@ public class CircleTextView extends TextView {
         mBgPaint.setColor(color);
     }
 
+    public void setColor(int color) {
+        this.color = color;
+    }
+
     @Override
     public void draw(Canvas canvas) {
         canvas.setDrawFilter(pfd);
         canvas.drawCircle(getWidth() / 2, getHeight() / 2, (Math.max(getWidth(), getHeight()) / 2) - 1, mBgPaint);
         Paint paint = new Paint();
-        paint.setColor(getResources().getColor(R.color.black3));
+        paint.setColor(color);
         paint.setStyle(Paint.Style.STROKE);//设置空心
         canvas.drawCircle(getWidth() / 2, getHeight() / 2, (Math.max(getWidth(), getHeight()) / 2), paint);
         this.setGravity(Gravity.CENTER);

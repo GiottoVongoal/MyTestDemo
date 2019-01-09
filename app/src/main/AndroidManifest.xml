@@ -118,6 +118,8 @@
         <activity android:name=".commonpopwindow.PopupWindowActivity" />
         <!--通过手势随意缩放、移动ImageView图片-->
         <activity android:name=".scaleimageview.ScaleImageViewActivity"/>
+        <!--Bannar轮播图-->
+        <activity android:name=".bannar.BannarActivity"/>
     </application>
 
 </manifest>

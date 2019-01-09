@@ -26,6 +26,7 @@ import com.example.giotto.mttext.demo.R;
 import com.example.giotto.mttext.demo.Scrollviewtop.HuaDongActivity;
 import com.example.giotto.mttext.demo.adslip.GuideAct;
 import com.example.giotto.mttext.demo.adslip.ViewpagerSlipActivity;
+import com.example.giotto.mttext.demo.bannar.BannarActivity;
 import com.example.giotto.mttext.demo.bean.TestBean;
 import com.example.giotto.mttext.demo.collectoractivitytext.OneActivity;
 import com.example.giotto.mttext.demo.commonpopwindow.PopupWindowActivity;
@@ -541,6 +542,17 @@ public class TextShowActivity extends Activity {
             @Override
             public void onClick(View view) {
                 MyUtils.intentStartActivity(TextShowActivity.this, ScaleImageViewActivity.class);
+            }
+        });
+        TextView tv35 = new TextView(this);
+        tv35.setPadding(10, 10, 10, 10);
+        LinearLayout.LayoutParams lp35 = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT);
+        layout.addView(tv35, lp35);
+        tv35.setText("点我去广告轮播图页面");
+        tv35.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                MyUtils.intentStartActivity(TextShowActivity.this, BannarActivity.class);
             }
         });
 

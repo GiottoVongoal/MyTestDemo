@@ -120,6 +120,8 @@
         <activity android:name=".scaleimageview.ScaleImageViewActivity"/>
         <!--Bannar轮播图-->
         <activity android:name=".bannar.BannarActivity"/>
+        <!--Android获取文件夹下的所有子文件名称-->
+        <activity android:name=".fileslist.FilesListActivity"/>
     </application>
 
 </manifest>

@@ -34,6 +34,7 @@ import com.example.giotto.mttext.demo.constraintlayout.ConstraintLayoutActivity;
 import com.example.giotto.mttext.demo.dateview.MyDateActivity;
 import com.example.giotto.mttext.demo.donghua.FirstActivity;
 import com.example.giotto.mttext.demo.dropdownmenu.DropDownActivity;
+import com.example.giotto.mttext.demo.fileslist.FilesListActivity;
 import com.example.giotto.mttext.demo.foodmenu.FoodMenuActivity;
 import com.example.giotto.mttext.demo.fragmentdemo.FragmentDemoActivity;
 import com.example.giotto.mttext.demo.glidetest.GlideImageViewActivity;
@@ -553,6 +554,17 @@ public class TextShowActivity extends Activity {
             @Override
             public void onClick(View view) {
                 MyUtils.intentStartActivity(TextShowActivity.this, BannarActivity.class);
+            }
+        });
+        TextView tv36 = new TextView(this);
+        tv36.setPadding(10, 10, 10, 10);
+        LinearLayout.LayoutParams lp36 = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT);
+        layout.addView(tv36, lp36);
+        tv36.setText("点我去扫描文件夹下内容页面");
+        tv36.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                MyUtils.intentStartActivity(TextShowActivity.this, FilesListActivity.class);
             }
         });
 

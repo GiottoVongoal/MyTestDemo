@@ -71,7 +71,7 @@ public class PropertyTest extends Activity implements View.OnClickListener {
         ObjectAnimator oa3 = ObjectAnimator.ofFloat(mImageViews.get(2), "translationX", -200f, 0);
         //向Y轴往下移动200
         ObjectAnimator oa4 = ObjectAnimator.ofFloat(mImageViews.get(3), "translationY", 200f, 0);
-        ObjectAnimator oa41 = ObjectAnimator.ofFloat(mImageViews.get(3), "translationX", 200f, 0);
+        ObjectAnimator oa41 = ObjectAnimator.ofFloat(mImageViews.get(3), "translationX", 200f, 0);//又向右移动200,变到方形右下角的位置
         //向X轴往右移200
         ObjectAnimator oa5 = ObjectAnimator.ofFloat(mImageViews.get(4), "translationX", 200f, 0);
         //同时作用多个属性动画效果

@@ -23,7 +23,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.giotto.mttext.demo.R;
-import com.example.giotto.mttext.demo.Scrollviewtop.HuaDongActivity;
+import com.example.giotto.mttext.demo.scrollviewtop.HuaDongActivity;
 import com.example.giotto.mttext.demo.adslip.GuideAct;
 import com.example.giotto.mttext.demo.adslip.ViewpagerSlipActivity;
 import com.example.giotto.mttext.demo.bannar.BannarActivity;

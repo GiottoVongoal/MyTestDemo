@@ -23,7 +23,6 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.giotto.mttext.demo.R;
-import com.example.giotto.mttext.demo.scrollviewtop.HuaDongActivity;
 import com.example.giotto.mttext.demo.adslip.GuideAct;
 import com.example.giotto.mttext.demo.adslip.ViewpagerSlipActivity;
 import com.example.giotto.mttext.demo.bannar.BannarActivity;
@@ -52,11 +51,13 @@ import com.example.giotto.mttext.demo.materialdesign.TransitionListActivity;
 import com.example.giotto.mttext.demo.mycustomviewltest.MyDemoSonActivity;
 import com.example.giotto.mttext.demo.picturefullscreen.PictureFullScreenActivity;
 import com.example.giotto.mttext.demo.scaleimageview.ScaleImageViewActivity;
+import com.example.giotto.mttext.demo.scrollviewtop.HuaDongActivity;
 import com.example.giotto.mttext.demo.search.SearchActivity;
 import com.example.giotto.mttext.demo.smarttab.SmartTabTestActivity;
 import com.example.giotto.mttext.demo.springview.AcFunHeader;
 import com.example.giotto.mttext.demo.springview.SpringView;
 import com.example.giotto.mttext.demo.springview.SpringViewActivity;
+import com.example.giotto.mttext.demo.table.TableActivity;
 import com.example.giotto.mttext.demo.timecount.GetVerificationCodeActivity;
 import com.example.giotto.mttext.demo.timecount.VerificationCodeActivity;
 import com.example.giotto.mttext.demo.utils.MyUtils;
@@ -565,6 +566,17 @@ public class TextShowActivity extends Activity {
             @Override
             public void onClick(View view) {
                 MyUtils.intentStartActivity(TextShowActivity.this, FilesListActivity.class);
+            }
+        });
+        TextView tv37 = new TextView(this);
+        tv37.setPadding(10, 10, 10, 10);
+        LinearLayout.LayoutParams lp37 = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT);
+        layout.addView(tv37, lp37);
+        tv37.setText("点我去表格展示页面");
+        tv37.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                MyUtils.intentStartActivity(TextShowActivity.this, TableActivity.class);
             }
         });
 

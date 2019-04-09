@@ -117,11 +117,15 @@
         <!-- 封装一个通用的PopupWindow -->
         <activity android:name=".commonpopwindow.PopupWindowActivity" />
         <!--通过手势随意缩放、移动ImageView图片-->
-        <activity android:name=".scaleimageview.ScaleImageViewActivity"/>
+        <activity android:name=".scaleimageview.ScaleImageViewActivity" />
         <!--Bannar轮播图-->
-        <activity android:name=".bannar.BannarActivity"/>
+        <activity android:name=".bannar.BannarActivity" />
         <!--Android获取文件夹下的所有子文件名称-->
-        <activity android:name=".fileslist.FilesListActivity"/>
+        <activity android:name=".fileslist.FilesListActivity" />
+        <!--表格展示页面-->
+        <activity
+            android:name=".table.TableActivity"
+            android:screenOrientation="landscape" />
     </application>
 
 </manifest>

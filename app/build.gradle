@@ -50,4 +50,6 @@ dependencies {
     compile 'xyz.zpayh:hdimageview:1.0.2'
     //bannar
 //    compile 'com.xhb:xbanner:1.5.1'
+    //展示表格
+    compile 'com.github.huangyanbin:SmartTable:1.7.1'
 }

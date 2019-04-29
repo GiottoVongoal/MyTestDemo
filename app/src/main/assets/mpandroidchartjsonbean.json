@@ -7,38 +7,112 @@
   "rspBody": {
     "list2": [
       {
-        "listx": [
+        "listx":[
           {
-            "xqyName": "东莞一区",
-            "xqyFrze": "10099990",
-            "xqyCode": "0151"
+            "xqyName":"东莞一区",
+            "xqyFrze":"1552463",
+            "xqyCode":"0151"
+          },
+          {
+            "xqyName":"东莞二区",
+            "xqyFrze":"12861772",
+            "xqyCode":"0152"
+          },
+          {
+            "xqyName":"东莞三区",
+            "xqyFrze":"6681088",
+            "xqyCode":"0219"
           }
         ],
-        "qyName": "东莞区域",
-        "qyCode": "0148"
+        "qyName":"东莞区域",
+        "qyCode":"0148"
       },
       {
-        "listx": [
+        "listx":[
           {
-            "xqyName": "深圳一区",
-            "xqyFrze": "2000000",
-            "xqyCode": "0153"
+            "xqyName":"苏州一区",
+            "xqyFrze":"7284394",
+            "xqyCode":"0169"
+          },
+          {
+            "xqyName":"苏州二区",
+            "xqyFrze":"7899670",
+            "xqyCode":"0189"
+          },
+          {
+            "xqyName":"苏州三区",
+            "xqyFrze":"815240",
+            "xqyCode":"0223"
           }
         ],
-        "qyName": "深圳区域",
-        "qyCode": "0149"
+        "qyName":"苏州区域",
+        "qyCode":"0150"
       },
       {
-        "listx": [
-          {},
+        "listx":[
           {
-            "xqyName": "苏州二区",
-            "xqyFrze": "1166968",
-            "xqyCode": "0186"
+            "xqyName":"深圳区",
+            "xqyFrze":"6994648",
+            "xqyCode":"0154"
           }
         ],
-        "qyName": "苏州区域二",
-        "qyCode": "0185"
+        "qyName":"深圳区域",
+        "qyCode":"0149"
+      },
+      {
+        "listx":[
+          {
+            "xqyName":"成都地区",
+            "xqyFrze":"5338165",
+            "xqyCode":"0200"
+          }
+        ],
+        "qyName":"成都区域",
+        "qyCode":"0199"
+      },
+      {
+        "listx":[
+          {
+            "xqyName":"重庆地区",
+            "xqyFrze":"3459500",
+            "xqyCode":"0203"
+          }
+        ],
+        "qyName":"重庆区域",
+        "qyCode":"0232"
+      },
+      {
+        "listx":[
+          {
+            "xqyName":"测试地区",
+            "xqyFrze":"3459500",
+            "xqyCode":"0203"
+          }
+        ],
+        "qyName":"测试区域",
+        "qyCode":"0232"
+      },
+      {
+        "listx":[
+          {
+            "xqyName":"测试地区",
+            "xqyFrze":"3459500",
+            "xqyCode":"0203"
+          }
+        ],
+        "qyName":"测试区域",
+        "qyCode":"0232"
+      },
+      {
+        "listx":[
+          {
+            "xqyName":"测试地区",
+            "xqyFrze":"3459500",
+            "xqyCode":"0203"
+          }
+        ],
+        "qyName":"测试区域",
+        "qyCode":"0232"
       }
     ],
     "list1": [

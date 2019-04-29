@@ -1,0 +1,59 @@
+{
+  "rspHead": {
+    "transCode": "refreshHomePage",
+    "retCode": "0",
+    "retMsg": "查询成功"
+  },
+  "rspBody": {
+    "list2": [
+      {
+        "listx": [
+          {
+            "xqyName": "东莞一区",
+            "xqyFrze": "10099990",
+            "xqyCode": "0151"
+          }
+        ],
+        "qyName": "东莞区域",
+        "qyCode": "0148"
+      },
+      {
+        "listx": [
+          {
+            "xqyName": "深圳一区",
+            "xqyFrze": "2000000",
+            "xqyCode": "0153"
+          }
+        ],
+        "qyName": "深圳区域",
+        "qyCode": "0149"
+      },
+      {
+        "listx": [
+          {},
+          {
+            "xqyName": "苏州二区",
+            "xqyFrze": "1166968",
+            "xqyCode": "0186"
+          }
+        ],
+        "qyName": "苏州区域二",
+        "qyCode": "0185"
+      }
+    ],
+    "list1": [
+      {
+        "je": "1555555",
+        "name": "陈健锋"
+      },
+      {
+        "je": "1555577",
+        "name": "李霞"
+      },
+      {
+        "je": "1558855",
+        "name": "苏州二区项目经理"
+      }
+    ]
+  }
+}

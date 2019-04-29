@@ -5,32 +5,74 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <com.example.giotto.mttext.demo.linechart.SuitLines
-        android:id="@+id/suitlines"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="200dp"
-        line:colorEdgeEffect="@color/colorPrimaryDark"
-        line:colorHint="@color/colorPrimary"
-        line:countOfY="6"
-        line:lineType="curve"
-        line:maxOfVisible="10"
-        line:needClickHint="true"
-        line:needEdgeEffect="true"
-        line:xyColor="@color/colorAccent"
-        line:xySize="8" />
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
 
-    <com.example.giotto.mttext.demo.linechart.SuitLines
-        android:id="@+id/suitlines2"
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:layout_marginTop="10dp"
-        line:colorEdgeEffect="@color/colorPrimaryDark"
-        line:colorHint="@color/colorPrimary"
-        line:countOfY="6"
-        line:lineType="curve"
-        line:maxOfVisible="10"
-        line:needClickHint="true"
-        line:needEdgeEffect="true"
-        line:xyColor="@color/colorAccent"
-        line:xySize="8" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.example.giotto.mttext.demo.linechart.SuitLines
+                android:id="@+id/suitlines"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:visibility="gone"
+                line:colorEdgeEffect="@color/colorPrimaryDark"
+                line:colorHint="@color/colorPrimary"
+                line:countOfY="6"
+                line:lineType="curve"
+                line:maxOfVisible="10"
+                line:needClickHint="true"
+                line:needEdgeEffect="true"
+                line:xyColor="@color/colorAccent"
+                line:xySize="8" />
+
+            <com.example.giotto.mttext.demo.linechart.SuitLines
+                android:id="@+id/suitlines2"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="10dp"
+                android:visibility="gone"
+                line:colorEdgeEffect="@color/colorPrimaryDark"
+                line:colorHint="@color/colorPrimary"
+                line:countOfY="6"
+                line:lineType="curve"
+                line:maxOfVisible="10"
+                line:needClickHint="true"
+                line:needEdgeEffect="true"
+                line:xyColor="@color/colorAccent"
+                line:xySize="8" />
+
+            <TextView
+                android:id="@+id/tv1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="TextView1" />
+
+            <TextView
+                android:id="@+id/tv2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="TextView2" />
+
+            <com.github.mikephil.charting.charts.BarChart
+                android:id="@+id/chart1"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:layout_margin="10dp"
+                android:padding="20dp" />
+
+            <com.github.mikephil.charting.charts.BarChart
+                android:id="@+id/chart2"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:layout_margin="10dp"
+                android:padding="20dp" />
+        </LinearLayout>
+    </ScrollView>
 </LinearLayout>

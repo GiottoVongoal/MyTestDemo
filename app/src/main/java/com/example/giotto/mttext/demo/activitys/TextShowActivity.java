@@ -473,7 +473,7 @@ public class TextShowActivity extends Activity {
         tv28.setPadding(10, 10, 10, 10);
         LinearLayout.LayoutParams lp28 = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT);
         layout.addView(tv28, lp28);
-        tv28.setText("点我去折线图");
+        tv28.setText("点我去折线图(suitlines/MPAndroidChart)");
         tv28.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

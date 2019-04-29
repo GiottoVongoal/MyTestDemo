@@ -52,4 +52,6 @@ dependencies {
 //    compile 'com.xhb:xbanner:1.5.1'
     //展示表格
     compile 'com.github.huangyanbin:SmartTable:1.7.1'
+    //画折线图
+    compile 'com.github.PhilJay:MPAndroidChart:v3.0.3'
 }

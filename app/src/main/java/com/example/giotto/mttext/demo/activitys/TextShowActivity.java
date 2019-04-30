@@ -237,7 +237,7 @@ public class TextShowActivity extends Activity {
         tv7.setPadding(10, 10, 10, 10);
         LayoutParams lp7 = new LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT);
         layout.addView(tv7, lp7);
-        tv7.setText("点我跳到仿支付宝四个活动,下拉导航变大的动画");
+        tv7.setText("点我跳到下拉导航变大的动画");
         tv7.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

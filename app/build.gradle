@@ -46,8 +46,6 @@ dependencies {
     compile 'org.greenrobot:eventbus:3.0.0'
     testCompile 'junit:junit:4.12'
     apt 'com.jakewharton:butterknife-compiler:8.4.0'
-    //通过手势随意缩放、移动ImageView图片
-    compile 'xyz.zpayh:hdimageview:1.0.2'
     //bannar
 //    compile 'com.xhb:xbanner:1.5.1'
     //展示表格

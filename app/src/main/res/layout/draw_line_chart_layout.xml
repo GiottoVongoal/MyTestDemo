@@ -19,7 +19,6 @@
                 android:id="@+id/suitlines"
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
-                android:visibility="gone"
                 line:colorEdgeEffect="@color/colorPrimaryDark"
                 line:colorHint="@color/colorPrimary"
                 line:countOfY="6"
@@ -35,7 +34,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
                 android:layout_marginTop="10dp"
-                android:visibility="gone"
                 line:colorEdgeEffect="@color/colorPrimaryDark"
                 line:colorHint="@color/colorPrimary"
                 line:countOfY="6"
@@ -51,14 +49,21 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="10dp"
-                android:text="TextView1" />
+                android:text="展示单组柱状图" />
 
             <TextView
                 android:id="@+id/tv2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="10dp"
-                android:text="TextView2" />
+                android:text="展示多组柱状图" />
+
+            <TextView
+                android:id="@+id/tv3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="展示单组折线图" />
 
             <com.github.mikephil.charting.charts.BarChart
                 android:id="@+id/chart1"
@@ -69,6 +74,13 @@
 
             <com.github.mikephil.charting.charts.BarChart
                 android:id="@+id/chart2"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:layout_margin="10dp"
+                android:padding="20dp" />
+
+            <com.github.mikephil.charting.charts.LineChart
+                android:id="@+id/chart3"
                 android:layout_width="match_parent"
                 android:layout_height="400dp"
                 android:layout_margin="10dp"

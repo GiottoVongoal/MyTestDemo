@@ -12,12 +12,18 @@ import com.example.giotto.mttext.demo.linechart.mpandroidchart.BarChartManager;
 import com.example.giotto.mttext.demo.linechart.mpandroidchart.MpChartBean;
 import com.example.giotto.mttext.demo.utils.GetJsonToName;
 import com.github.mikephil.charting.charts.BarChart;
+import com.github.mikephil.charting.charts.LineChart;
+import com.github.mikephil.charting.components.XAxis;
 import com.github.mikephil.charting.components.YAxis;
+import com.github.mikephil.charting.data.Entry;
+import com.github.mikephil.charting.data.LineData;
+import com.github.mikephil.charting.data.LineDataSet;
 import com.google.gson.Gson;
 
 import java.security.SecureRandom;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 
 /**
  * @author 杨丽亚.
@@ -33,63 +39,78 @@ public class DrawLineChartActivity extends Activity {
 
     //MPAndroidChart
     private BarChart mChart1, mChart2;
-    private TextView tv1, tv2;
+    private LineChart mChart3;
+    private TextView tv1, tv2, tv3;
     private BarChartManager barChartManager1, barChartManager2;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.draw_line_chart_layout);
-//        suitlines = (SuitLines) findViewById(R.id.suitlines);
-//        suitlines2 = (SuitLines) findViewById(R.id.suitlines2);
+        suitlines = (SuitLines) findViewById(R.id.suitlines);
+        suitlines2 = (SuitLines) findViewById(R.id.suitlines2);
 
         color[0] = getResources().getColor(R.color.blue4);
         color[1] = getResources().getColor(R.color.holiday_text_color);
         color[2] = getResources().getColor(R.color.select_circle_color);
         color[3] = getResources().getColor(R.color.green_aed79b);
         color[4] = getResources().getColor(R.color.color_item_press);
-//        suitlines.setDefaultOneLineColor(color);
-//        suitlines.setLineForm(true);
-//        List<Unit> lines = new ArrayList<>();
-//        for (int i = 0; i < 8; i++) {
-//            lines.add(new Unit(new SecureRandom().nextInt(10), i + ""));
-//        }
-//        suitlines.feedWithAnim(lines);
-//
-//        //画多条线时必须保证UI已加载完成,否则会崩溃(加1秒延迟)
-//        new Thread(new Runnable() {
-//            @Override
-//            public void run() {
-//                try {
-//                    Thread.sleep(1000);
-//                    show2Lines();
-//                } catch (InterruptedException e) {
-//                    e.printStackTrace();
-//                }
-//            }
-//        }).start();
+        suitlines.setDefaultOneLineColor(color);
+        suitlines.setLineForm(true);
+        List<Unit> lines = new ArrayList<>();
+        for (int i = 0; i < 8; i++) {
+            lines.add(new Unit(new SecureRandom().nextInt(10), i + ""));
+        }
+        suitlines.feedWithAnim(lines);
 
-        //MPAndroidChart
+        //画多条线时必须保证UI已加载完成,否则会崩溃(加1秒延迟)
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                try {
+                    Thread.sleep(1000);
+                    show2Lines();
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+            }
+        }).start();
+
+        /**********************************MPAndroidChart********************************************/
+        //创建单条柱状的图表
         tv1 = (TextView) findViewById(R.id.tv1);
-        tv2 = (TextView) findViewById(R.id.tv2);
         mChart1 = (BarChart) findViewById(R.id.chart1);
-        mChart2 = (BarChart) findViewById(R.id.chart2);
         barChartManager1 = new BarChartManager(mChart1, this);
-        barChartManager2 = new BarChartManager(mChart2, this);
-        setBarChartData1();
         tv1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //创建多条柱状的图表
                 setBarChartData1();
             }
         });
+
+        //创建多条柱状的图表
+        tv2 = (TextView) findViewById(R.id.tv2);
+        mChart2 = (BarChart) findViewById(R.id.chart2);
+        barChartManager2 = new BarChartManager(mChart2, this);
         tv2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 setBarChartData2();
             }
         });
+
+        //创建单条折线的图表
+        tv3 = (TextView) findViewById(R.id.tv3);
+        mChart3 = (LineChart) findViewById(R.id.chart3);
+        tv3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                setBarChartData3();
+            }
+        });
+
+        setBarChartData1();//默认先展示单条柱状的图表
     }
 
     private void show2Lines() {
@@ -108,11 +129,12 @@ public class DrawLineChartActivity extends Activity {
     /**********************************************MPAndroidChart********************************************/
 
     /**
-     * 折线图bean1条
+     * 柱状图bean1条
      */
     public void setBarChartData1() {
         mChart1.setVisibility(View.VISIBLE);
         mChart2.setVisibility(View.GONE);
+        mChart3.setVisibility(View.GONE);
         String jsonString = GetJsonToName.getJson(this.getBaseContext(), "mpandroidchartjsonbean.json");
         Gson gson = new Gson();
         MpChartBean bean = gson.fromJson(jsonString, MpChartBean.class);
@@ -135,11 +157,12 @@ public class DrawLineChartActivity extends Activity {
     }
 
     /**
-     * 折线图bean多条
+     * 柱状图bean多条
      */
     public void setBarChartData2() {
         mChart1.setVisibility(View.GONE);
         mChart2.setVisibility(View.VISIBLE);
+        mChart3.setVisibility(View.GONE);
         String jsonString = GetJsonToName.getJson(this.getBaseContext(), "mpandroidchartjsonbean.json");
         Gson gson = new Gson();
         MpChartBean bean = gson.fromJson(jsonString, MpChartBean.class);
@@ -198,5 +221,49 @@ public class DrawLineChartActivity extends Activity {
         nameY.add("二区");
         nameY.add("三区");
         barChartManager2.showBarChart(nameX, yValues, nameY);
+    }
+
+    /**
+     * 单条柱状的图表
+     */
+    public void setBarChartData3() {
+        mChart1.setVisibility(View.GONE);
+        mChart2.setVisibility(View.GONE);
+        mChart3.setVisibility(View.VISIBLE);
+
+        //1.设置x轴和y轴的点
+        List<Entry> entries = new ArrayList<>();
+        for (int i = 0; i < 12; i++)
+            entries.add(new Entry(i, new Random().nextInt(300)));
+
+        LineDataSet dataSet = new LineDataSet(entries, "Label"); // add entries to dataset
+        dataSet.setColor(Color.parseColor("#7d7d7d"));//线条颜色
+        dataSet.setCircleColor(Color.parseColor("#7d7d7d"));//圆点颜色
+        dataSet.setLineWidth(1f);//线条宽度
+
+        //设置样式
+        YAxis rightAxis = mChart3.getAxisRight();
+
+        //设置图表右边的y轴禁用
+        rightAxis.setEnabled(false);
+        YAxis leftAxis = mChart3.getAxisLeft();
+        //设置图表左边的y轴禁用
+        leftAxis.setEnabled(false);
+        //设置x轴
+        XAxis xAxis = mChart3.getXAxis();
+        xAxis.setTextColor(Color.parseColor("#333333"));
+        xAxis.setTextSize(11f);
+        xAxis.setAxisMinimum(0f);
+        xAxis.setDrawAxisLine(true);//是否绘制轴线
+        xAxis.setDrawGridLines(false);//设置x轴上每个点对应的线
+        xAxis.setDrawLabels(true);//绘制标签  指x轴上的对应数值
+        xAxis.setPosition(XAxis.XAxisPosition.BOTTOM);//设置x轴的显示位置
+        xAxis.setGranularity(1f);//禁止放大后x轴标签重绘
+
+        //3.chart设置数据
+        LineData lineData = new LineData(dataSet);
+        mChart3.setData(lineData);
+        mChart3.invalidate(); // refresh
+
     }
 }

@@ -190,7 +190,9 @@ public class BarChartManager {
         legend.setDrawInside(false);
 
         data.setBarWidth(barWidth);
-        data.groupBars(0, groupSpace, barSpace);
+        if (yValuesList.size() > 1) {
+            data.groupBars(0, groupSpace, barSpace);
+        }
         mBarChart.setData(data);
         //设置动画效果
         mBarChart.animateY(1000, Easing.EasingOption.Linear);
